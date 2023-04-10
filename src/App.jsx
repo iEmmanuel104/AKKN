@@ -2,15 +2,19 @@ import { useState } from 'react'
 import Header from './components/Header'
 import Feed from './components/Feed'
 import Hero from './components/Hero'
+import RecentPosts from './components/RecentPosts'
+import Footer from './components/Footer'
 
 function App() {
-	const [count, setCount] = useState(0)
-
 	return (
 		<>
 			<Header />
-			<Hero/>
-			<Feed />
+			<div class="jl_home_bw">
+				<Hero />
+				<Feed />
+				<RecentPosts />
+			</div>
+			<Footer />
 		</>
 	)
 }
